@@ -1,11 +1,11 @@
 {
-    "name": "first",
-    "short_name": "first",
+    "name": "eclipse_priority_dashboard",
+    "short_name": "eclipse_priority_dashboard",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Dashboard to control sale offerings",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
