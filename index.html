@@ -1,22 +1,46 @@
+<!DOCTYPE html>
 <html>
+<head>
     <style>
-        h1 {text-align: center;}
-        body {text-align: center;}
-        body {background-color:#0A0E21;}
-	body {color:white}
-        </style>
-    <body>
-        <h1>
-            <style>
-                style="background-color:powderblue;"
-            </style>
-            R&D Service knowledge base
-        </h1>
+        body {
+            text-align: center;
+            background-color: #0A0E21;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .iframe-container {
+            position: relative;
+            width: 700px; /* Match iframe width */
+            height: 600px; /* Match iframe height */
+            margin: auto; /* Center the container */
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 25%; /* Cover top 1/4 of the iframe */
+            background-color: #0A0E21;
+            z-index: 10; /* Ensure it covers the iframe */
+        }
+        h1 {
+            background-color: powderblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>R&D Service knowledge base - MaloneyServiceProvider</h1>
+    <div class="iframe-container">
         <iframe
-    allow="microphone;"
-    width="700"
-    height="600"
-    src="https://console.dialogflow.com/api-client/demo/embedded/1c2721b3-0443-4626-a6e6-3b98d8b67c9d">
+            allow="microphone;"
+            src="https://console.dialogflow.com/api-client/demo/embedded/1c2721b3-0443-4626-a6e6-3b98d8b67c9d">
         </iframe>
-    </body>
+        <div class="overlay"></div> <!-- Overlay goes here -->
+    </div>
+</body>
 </html>
+
